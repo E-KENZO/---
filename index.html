@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071426"><meta name="description" content="E-KENZO Store — Roblox services and official Robux information.">
+  <title>𝙀-𝙠𝙚𝙣𝙯𝙤 𝙎𝙩𝙤𝙧𝙚 | Roblox Services</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="#home" aria-label="E-KENZO Store home">
+  <span class="brand-icon">
+  <img src="assets/logo.png" alt="logo">
+  </span>
+  <span>𝙀-𝙠𝙚𝙣𝙯𝙤 <b>𝙎𝙩𝙤𝙧𝙚</b></span></a>
+  <div class="header-actions"><button id="languageBtn" class="language-btn" type="button" aria-label="Switch language">English</button><button id="menuBtn" class="menu-btn" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">☰</button></div>
+  <nav id="navMenu" class="nav-menu"><a href="#home" data-i18n="navHome">ទំព័រដើម</a><a href="roblox.html">កញ្ចប់ Robux</a><a href="#robux" data-i18n="navRobux">ព័ត៌មាន Robux</a><a href="#gallery" data-i18n="navGallery">រូបភាពរបស់ខ្ញុំ</a><a href="#contact" data-i18n="navContact">ទាក់ទងយើង</a></nav>
+</header>
+<main>
+<section class="hero-slideshow-section" aria-label="រូបភាពបង្ហាញ">
+  <div class="hero-slideshow" id="heroSlideshow">
+    <div class="slide active"><img src="assets/robux/robux.png" alt="Robux gaming artwork"><div class="slide-caption"><span>WELCOME TO</span><strong>E-KENZO STORE</strong><p>Roblox • Gaming • Creative</p></div></div>
+    <div class="slide"><img src="assets/robux/roblox-logo.jpg" alt="Roblox artwork"><div class="slide-caption"><span>YOUR GAMING STORE</span><strong>ROBLOX & ROBUX</strong><p>Explore your gaming world</p></div></div>
+    <div class="slide slide-custom" id="customSlide" hidden><img id="customSlideImage" alt="រូបភាពដែលអ្នកបានជ្រើសរើស"><div class="slide-caption"><span>YOUR PHOTO</span><strong>E-KENZO STORE</strong><p>រូបភាពផ្ទាល់ខ្លួនរបស់អ្នក</p></div></div>
+    <button class="slide-arrow prev" type="button" id="slidePrev" aria-label="រូបភាពមុន">‹</button><button class="slide-arrow next" type="button" id="slideNext" aria-label="រូបភាពបន្ទាប់">›</button>
+    <div class="slide-dots" id="slideDots" aria-label="ជ្រើសរើសរូបភាព"></div>
+  </div>
+  <div class="personal-photo-panel">
+    <label class="profile-photo" for="profilePhotoInput" title="ចុចដើម្បីជ្រើសរើសរូបថត">
+      <img id="profilePhotoPreview" alt="រូបថតផ្ទាល់ខ្លួន" hidden><span id="profilePhotoPlaceholder">＋</span>
+    </label>
+    <div><strong>រូបថតផ្ទាល់ខ្លួន</strong><p>ចុចរង្វង់មូល ដើម្បីដាក់រូបថតរបស់អ្នក</p><label class="photo-pick-btn" for="profilePhotoInput">ជ្រើសរើសរូបថត</label><input id="profilePhotoInput" type="file" accept="image/*" hidden></div>
+  </div>
+</section>
+<section id="games" class="section-wrap section-block">
+<div class="section-heading"><span class="eyebrow"></span><h2>ជ្រើសរើសហ្គេម</h2><p>សូមស្វាគមន៍</p></div>
+<div class="games-grid">
+<a class="game-tile" href="roblox.html" aria-label="បើកទំព័រកញ្ចប់ Roblox">
+  <span class="game-image-wrap"><img src="assets/robux/roblox-logo.jpg" alt="Roblox logo"></span>
+  <span class="game-title">Roblox</span>
+  <span class="game-description">ជ្រើសរើសកញ្ចប់ Robux</span>
+  <span class="game-action">មើលកញ្ចប់ <span aria-hidden="true">↗</span></span>
+</a>
+</div>
+</section>
+<section id="contact" class="section-wrap section-block"><div class="contact-panel"><span class="eyebrow" data-i18n="contactEyebrow">LET'S TALK</span><h2 data-i18n="contactTitle">តើអ្នកត្រូវការជំនួយទេ?</h2><p data-i18n="contactText">ចុចប៊ូតុងខាងក្រោម ដើម្បីទាក់ទង E-KENZO Store តាម Telegram។</p><a class="btn btn-primary" href="https://t.me/EkenZoshop" target="_blank" rel="noopener noreferrer" data-i18n="contactBtn">ទាក់ទងតាម Telegram ↗</a></div></section>
+</main><footer class="site-footer"><strong>E-KENZO STORE</strong><p data-i18n="footerText">សេវាកម្មឯករាជ្យ មិនត្រូវបានឧបត្ថម្ភ ឬគ្រប់គ្រងដោយ Roblox Corporation ទេ។</p><p>© <span id="year"></span> E-KENZO Store</p></footer>
+<a class="telegram-float" href="https://t.me/ekenzostore" target="_blank" rel="noopener noreferrer" aria-label="Contact E-KENZO Store on Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.8 3.3 18.5 20c-.25 1.18-.92 1.47-1.87.92l-5.18-3.82-2.5 2.4c-.28.28-.51.51-1.04.51l.37-5.28 9.61-8.68c.42-.37-.09-.58-.65-.21L5.36 13.2.24 11.6c-1.11-.35-1.13-1.11.23-1.65L20.5 2.33c.92-.34 1.73.22 1.3.97Z"/></svg><span>Telegram</span></a>
+</body></html>
